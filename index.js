@@ -13,4 +13,9 @@ app.post("/", (req, res) => {
   res.json({msg: "Task timed out"});
 });
 
+app.post("/log", (req, res) => {
+  console.log("log: ", req.body);
+  res.json({msg: "log received"});
+});
+
 app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
