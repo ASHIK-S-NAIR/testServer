@@ -18,4 +18,9 @@ app.post("/log", (req, res) => {
   res.json({msg: "log received"});
 });
 
+app.post("/ebApi", (req, res) => {
+  res.json({msg: "data received at EB side"});
+});
+  
+
 app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
