@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   console.log("body: ", req.body);
-  res.json({msg: "Task timed out"});
+  res.json({msg: "Everything is ok"});
 });
 
 app.post("/log", (req, res) => {
