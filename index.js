@@ -20,7 +20,7 @@ app.post("/log", (req, res) => {
 
 app.post("/ebApi", (req, res) => {
   console.log("data at EB: ", req.body);
-  res.json({msg: "data received at EB side"});
+  // res.json({msg: "data received at EB side"});
 });
   
 
