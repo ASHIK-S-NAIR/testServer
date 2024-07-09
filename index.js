@@ -26,8 +26,7 @@ app.post("/ebApi", (req, res) => {
 app.post("/callflow", (req, res) => {
   console.log("callflow api triggered");
   return res.json({
-  "number": "",
-  "app": "tvs",
+  "status": false,
   "callflow": [
     {
       "EXTRA_PARAMS": {
@@ -80,7 +79,12 @@ app.post("/callflow", (req, res) => {
         ]
       }
     }
-  ]
+  ],
+  "messages": {
+    "AgentNumber": [
+      "The agent number field is required."
+    ]
+  }
 });
 });
   
