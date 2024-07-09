@@ -71,6 +71,13 @@ app.post("/callflow", (req, res) => {
           }
         ]
       }
+    },
+    {
+      "EXTRA_PARAMS": {
+        "CustomerNumber": 8281905203,
+        "AgentNumber": 8593048964,
+        "RequestId": 415
+      }
     }
   ],
   "messages": {
