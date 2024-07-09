@@ -29,13 +29,6 @@ app.post("/callflow", (req, res) => {
   "status": false,
   "callflow": [
     {
-      "EXTRA_PARAMS": {
-        "CustomerNumber": 8281905203,
-        "AgentNumber": 8593048964,
-        "RequestId": 415
-      }
-    },
-    {
       "WORKING_HOUR": {
         "config": {
           "all": [
