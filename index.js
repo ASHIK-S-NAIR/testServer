@@ -25,7 +25,7 @@ app.post("/ebApi", (req, res) => {
 
 app.post("/callflow", (req, res) => {
   console.log("callflow api triggered");
-  return res.json();
+  return res.json({"number":"","app":"tvs","callflow":[{"EXTRA_PARAMS":{"CustomerNumber":8281905203,"AgentNumber":8593048964,"RequestId":415}},{"WORKING_HOUR":{"config":{"all":[{"from":"0000","to":"2359"}]},"true":[{"CONNECT_GROUP":{"statergy":"PRIORITY","participants":[{"name":"","number":"+919539200807","timeout":"60"}]}},{"PROMPT":{"file":"no_answer"}},{"HANGUP":"true"}],"false":[{"PROMPT":{"file":"telecom_638760eb55590"}},{"HANGUP":"true"}]}}]});
 });
   
 
