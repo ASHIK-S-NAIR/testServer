@@ -22,6 +22,11 @@ app.post("/ebApi", (req, res) => {
   console.log("data at EB: ", req.body);
   return res.json(req.body);
 });
+
+app.post("/callflow", (req, res) => {
+  console.log("callflow api triggered");
+  return res.json();
+});
   
 
 app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
